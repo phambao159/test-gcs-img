@@ -1,13 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
-import img1 from "/images/carrier_ac01_img1.webp"
 
 function App() {
   return (
     <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h1>Test Image from GCS</h1>
+      <h1>Test Image</h1>
       <img
-        src={img1}
+        src={`${process.env.PUBLIC_URL}/images/carrier_ac01_img1.webp`}
         alt="Carrier AC01"
         width="400"
       />
